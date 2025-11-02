@@ -1,0 +1,392 @@
+
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías Web Modernas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="juan.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>TecnoWeb</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#html5">HTML5</a></li>
+                <li><a href="#css3">CSS3</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#frameworks">Frameworks</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Tecnologías Web Modernas</h1>
+                <p>Descubre las últimas tendencias en desarrollo web y cómo están transformando la experiencia digital.</p>
+                <div class="btn-container">
+                    <a href="#html5" class="btn">Comenzar Exploración</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-react"></i>
+                        <h3>Frameworks</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HTML5 Section -->
+    <section id="html5" class="tech-section">
+        <div class="section-title">
+            <h2>HTML5: El Esqueleto de la Web</h2>
+            <p>La quinta revisión del lenguaje fundamental para crear páginas web</p>
+        </div>
+        
+        <div class="tech-content">
+            <div class="tech-info">
+                <h3>¿Qué es HTML5?</h3>
+                <p>HTML5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. Representa un cambio significativo con respecto a versiones anteriores, introduciendo nuevos elementos que mejoran la semántica, accesibilidad y multimedia.</p>
+                
+                <h3>Características Principales</h3>
+                <ul>
+                    <li>Nuevos elementos semánticos como &lt;header&gt;, &lt;footer&gt;, &lt;article&gt; y &lt;section&gt;</li>
+                    <li>Soporte integrado para audio y video con los elementos &lt;audio&gt; y &lt;video&gt;</li>
+                    <li>Canvas y SVG para gráficos y animaciones</li>
+                    <li>Mejor soporte para almacenamiento local (localStorage y sessionStorage)</li>
+                    <li>Nuevos tipos de input para formularios (email, url, date, etc.)</li>
+                    <li>Mejoras en rendimiento y seguridad</li>
+                </ul>
+            </div>
+            
+            <div class="code-example">
+                <div class="code-container">
+                    <div class="code-header">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                        <span>ejemplo.html</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Ejemplo HTML5&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Mi Página Web&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#servicios"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;h2&gt;Artículo Principal&lt;/h2&gt;
+      &lt;p&gt;Contenido interesante...&lt;/p&gt;
+      &lt;video controls width="250"&gt;
+        &lt;source src="video.mp4" type="video/mp4"&gt;
+      &lt;/video&gt;
+    &lt;/article&gt;
+  &lt;/main&gt;
+  
+  &lt;footer&gt;
+    &lt;p&gt;© 2023 Mi Website&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSS3 Section -->
+    <section id="css3" class="tech-section">
+        <div class="section-title">
+            <h2>CSS3: El Estilo de la Web</h2>
+            <p>Hojas de Estilo en Cascada que dan vida y diseño a las páginas web</p>
+        </div>
+        
+        <div class="tech-content reverse">
+            <div class="code-example">
+                <div class="code-container">
+                    <div class="code-header">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                        <span>estilos.css</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code>/* Variables CSS */
+:root {
+  --primary: #2563eb;
+  --secondary: #8b5cf6;
+  --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+/* Flexbox para layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Grid para layout complejos */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Animaciones y transiciones */
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries para responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-info">
+                <h3>¿Qué es CSS3?</h3>
+                <p>CSS3 (Cascading Style Sheets, nivel 3) es la última evolución del lenguaje de hojas de estilos, que permite controlar la presentación de los documentos HTML. CSS3 introduce múltiples módulos que añaden potentes capacidades de diseño.</p>
+                
+                <h3>Características Principales</h3>
+                <ul>
+                    <li>Selectores avanzados para un control más preciso de los elementos</li>
+                    <li>Flexbox y Grid para crear layouts complejos y responsive</li>
+                    <li>Animaciones y transiciones para interfaces dinámicas</li>
+                    <li>Variables CSS para mantener consistencia en el diseño</li>
+                    <li>Sombras, gradientes y efectos visuales avanzados</li>
+                    <li>Media queries para diseño responsive adaptado a diferentes dispositivos</li>
+                    <li>Transformaciones 2D y 3D para efectos visuales impactantes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Section -->
+    <section id="javascript" class="tech-section">
+        <div class="section-title">
+            <h2>JavaScript: La Interactividad de la Web</h2>
+            <p>El lenguaje de programación que hace dinámicas las páginas web</p>
+        </div>
+        
+        <div class="tech-content">
+            <div class="tech-info">
+                <h3>¿Qué es JavaScript?</h3>
+                <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico. Se utiliza principalmente del lado del cliente, implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas.</p>
+                
+                <h3>Características Principales</h3>
+                <ul>
+                    <li>Lenguaje del lado del cliente que se ejecuta en el navegador</li>
+                    <li>Manipulación del DOM para cambiar contenido y estructura de páginas web</li>
+                    <li>Gestión de eventos para interactuar con las acciones del usuario</li>
+                    <li>Comunicación asíncrona con servidores (AJAX)</li>
+                    <li>Almacenamiento en el lado del cliente (cookies, localStorage)</li>
+                    <li>ES6+ introdujo clases, módulos, arrow functions y muchas mejoras</li>
+                    <li>Node.js permite ejecutar JavaScript en el servidor</li>
+                </ul>
+            </div>
+            
+            <div class="code-example">
+                <div class="code-container">
+                    <div class="code-header">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                        <span>script.js</span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code>// ES6+ Features: Arrow functions, const/let, template literals
+const API_URL = 'https://api.example.com/data';
+
+// Función asíncrona para obtener datos
+const fetchData = async () => {
+  try {
+    const response = await fetch(API_URL);
+    const data = await response.json();
+    displayData(data);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+};
+
+// Manipulación del DOM
+const displayData = (data) => {
+  const container = document.getElementById('data-container');
+  
+  // Crear elementos con template literals
+  const html = data.map(item => `
+    <div class="card">
+      <h3>${item.title}</h3>
+      <p>${item.description}</p>
+      <button onclick="handleClick(${item.id})">Ver más</button>
+    </div>
+  `).join('');
+  
+  container.innerHTML = html;
+};
+
+// Manejo de eventos
+const handleClick = (id) => {
+  console.log(`Elemento ${id} clickeado`);
+  // Lógica adicional aquí...
+};
+
+// Ejecutar cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', fetchData);</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frameworks Section -->
+    <section id="frameworks" class="tech-section">
+        <div class="section-title">
+            <h2>Frameworks Modernos</h2>
+            <p>Herramientas que facilitan el desarrollo de aplicaciones web complejas</p>
+        </div>
+        
+        <div class="frameworks-grid">
+            <div class="framework-card">
+                <div class="framework-icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h3>React</h3>
+                <p>Biblioteca de JavaScript para construir interfaces de usuario, desarrollada por Facebook. Utiliza un enfoque basado en componentes.</p>
+                <ul>
+                    <li>Virtual DOM para mejor rendimiento</li>
+                    <li>Componentes reutilizables</li>
+                    <li>JSX para escribir HTML dentro de JavaScript</li>
+                    <li>Comunidad muy grande y activa</li>
+                </ul>
+            </div>
+            
+            <div class="framework-card">
+                <div class="framework-icon">
+                    <i class="fab fa-vuejs"></i>
+                </div>
+                <h3>Vue.js</h3>
+                <p>Framework progresivo de JavaScript para construir interfaces de usuario. Diseñado para ser adoptable incrementalmente.</p>
+                <ul>
+                    <li>Sistema reactivo de datos</li>
+                    <li>Sintaxis de plantillas intuitiva</li>
+                    <li>Curva de aprendizaje suave</li>
+                    <li>Documentación excelente</li>
+                </ul>
+            </div>
+            
+            <div class="framework-card">
+                <div class="framework-icon">
+                    <i class="fab fa-angular"></i>
+                </div>
+                <h3>Angular</h3>
+                <p>Platform y framework para construir aplicaciones web client-side usando HTML y TypeScript, desarrollado por Google.</p>
+                <ul>
+                    <li>Framework completo (no necesita librerías adicionales)</li>
+                    <li>Usa TypeScript por defecto</li>
+                    <li>Inyección de dependencias</li>
+                    <li>Potente CLI para generar código</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>TecnoWeb</h3>
+                <p>Explorando las últimas tecnologías y tendencias en desarrollo web moderno.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Tecnologías</h3>
+                <ul class="footer-links">
+                    <li><a href="#html5">HTML5</a></li>
+                    <li><a href="#css3">CSS3</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#frameworks">Frameworks</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Recursos</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Documentación</a></li>
+                    <li><a href="#">Tutoriales</a></li>
+                    <li><a href="#">Ejemplos</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#">Consultoría</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 TecnoWeb - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
